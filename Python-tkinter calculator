@@ -1,0 +1,1530 @@
+from tkinter import *
+
+root=Tk()
+
+root.overrideredirect(True)
+
+width_value=root.winfo_screenwidth()
+height_value=root.winfo_screenheight()
+
+root.geometry("%dx%d+0+0" % (width_value,height_value) )
+
+
+def resize():
+    a=30/100*height_valu
+    b=15/100*height_valu
+    c=10/100*height_valu
+    de=5/100*height_valu
+    a=30/100*height_valu
+    spacing=int(4/100*a)
+    t1fo=int(4/100*a)
+    x1=width_valu/4
+    y1=(50/100*height_valu)/5
+    font20=(10/100*height_valu)
+    fo28=int(22/100*font20)
+    fo35=int(28/100*font20)
+    fo30=int(24/100*font20)
+    fo20=int(16/100*font20)
+    font5=(5/100*height_valu)
+    fo10=int(16/100*font5)
+    fo15=int(24/100*font5)
+    fo7=(0.6/100*height_valu)
+    
+    fo7list[0]=fo7
+    
+    
+    f1.config(height=a)
+    f2.config(height=b)
+    f3.config(height=c)
+    f4.config(height=c)
+    f5.config(height=c)
+    f6.config(height=c)
+    f7.config(height=c)
+    fs.config(height=de)
+    fc.config(height=de,width=de)
+    bst.config(font=("times",fo10,"bold"))
+    bcu.config(font=("times",fo15,"bold"))
+    t1.config(font=("times",t1fo,"bold"),spacing2=spacing)
+    t2.config(font=("times",t1fo,"bold"),spacing2=spacing)
+    
+    
+    bc.place(x=0)
+    bb.place(x=(x1))
+    bp.place(x=(x1*2))
+    bd.place(x=(x1*3))
+    
+    b7.place(x=0)
+    b8.place(x=(x1))
+    b9.place(x=(x1*2))
+    bv.place(x=(x1*3))
+    
+    b4.place(x=0)
+    b5.place(x=(x1))
+    b6.place(x=(x1*2))
+    bm.place(x=(x1*3))
+    
+    b1.place(x=0)
+    b2.place(x=(x1))
+    b3.place(x=(x1*2))
+    bs.place(x=(x1*3))
+    
+    b0.place(x=0)
+    bdo.place(x=(x1))
+    be.place(x=(x1*2))
+    ba.place(x=(x1*3))
+    
+    try:
+        stf.place(x=0,y=de+2)
+        bh.config(font=("times",int(fo7list[0]),"bold"))
+        bdm.config(font=("times",int(fo7list[0]),"bold"))      
+        bcl.config(font=("times",int(fo7list[0]),"bold"))
+        
+    except:
+        pass
+    #stf.place(x=0,y=de)
+    
+    bd.config(font=("times", fo20 ,"bold"))
+    bp.config(font=("times", fo20 ,"bold"))
+    bb.config(font=("times", fo20 ,"bold"))
+    bc.config(font=("times", fo20 ,"bold"))
+    b7.config(font=("times", fo20 ,"bold"))
+    b8.config(font=("times", fo20 ,"bold"))
+    b9.config(font=("times", fo20 ,"bold"))
+    bv.config(font=("times", fo30 ,"bold"))
+    b4.config(font=("times", fo20 ,"bold"))
+    b5.config(font=("times", fo20 ,"bold"))
+    b6.config(font=("times", fo20 ,"bold"))
+    bm.config(font=("times", fo30 ,"bold"))
+    b1.config(font=("times", fo20 ,"bold"))
+    b2.config(font=("times", fo20 ,"bold"))
+    b3.config(font=("times", fo20 ,"bold"))
+    bs.config(font=("times", fo20 ,"bold"))
+    b0.config(font=("times", fo20 ,"bold"))
+    bdo.config(font=("times", fo20 ,"bold"))
+    be.config(font=("times", fo28 ,"bold"))
+    ba.config(font=("times", fo35 ,"bold"))
+    
+
+
+
+
+
+def enabledm():
+    dmlist[0]=1
+    
+    
+    
+    bst.config(bg='black',fg='white',activebackground='black',activeforeground='white')
+    bh.config(bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white')
+    bdm.config(bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white',text='Disable \ndark mode',command=disabledm)
+    line.config(bg='white')
+    bcl.config(bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white')
+    
+    fs.config(bg='black')
+    bcu.config(bg='black',activebackground='black')
+    
+    t1.config(bg='black',fg='white')
+    t2.config(bg='black',fg='white')
+    
+    bd.config(bg='#5C5C5C',fg='white',activebackground='#5C5C5C',activeforeground='white')
+    bp.config(bg='#5C5C5C',fg='white',activebackground='#5C5C5C',activeforeground='white')
+    bb.config(bg='#5C5C5C',fg='white',activebackground='#5C5C5C',activeforeground='white')
+    bc.config(bg='#5C5C5C',fg='white',activebackground='#5C5C5C',activeforeground='white')
+
+    b7.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b8.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b9.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    bv.config(bg='#404040',fg='white',activebackground='#404040',activeforeground='white')
+    
+    b4.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b5.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b6.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    bm.config(bg='#404040',fg='white',activebackground='#404040',activeforeground='white')
+    
+    b1.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b2.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    b3.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    bs.config(bg='#404040',fg='white',activebackground='#404040',activeforeground='white')
+    
+    b0.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    bdo.config(bg='#111111',fg='white',activebackground='#111111',activeforeground='white')
+    be.config(bg='#232323',fg='white',activebackground='#232323',activeforeground='white')
+    ba.config(bg='#404040',fg='white',activebackground='#404040',activeforeground='white')
+    
+
+    reprebg[0]='#4C4B4B'
+    reprefg[0]='white'
+    closes()
+
+
+
+
+def disabledm():
+    dmlist[0]=0
+    
+    bst.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    bh.config(bg='#D9D9D9',fg='black',activebackground='#D9D9D9',activeforeground='black')
+    bdm.config(bg='#D9D9D9',fg='black',activebackground='#D9D9D9',activeforeground='black',text='Enable \ndark mode',command=enabledm)
+    line.config(bg='black')
+    bcl.config(bg='#D9D9D9',fg='black',activebackground='#D9D9D9',activeforeground='black')
+    
+    fs.config(bg='white')
+    bcu.config(bg='white',activebackground='white')
+    
+    t1.config(bg='white',fg='black')
+    t2.config(bg='white',fg='black')
+    
+    bd.config(bg='#AEAEAE',fg='black',activebackground='#AEAEAE',activeforeground='black')
+    bp.config(bg='#AEAEAE',fg='black',activebackground='#AEAEAE',activeforeground='black')
+    bb.config(bg='#AEAEAE',fg='black',activebackground='#AEAEAE',activeforeground='black')
+    bc.config(bg='#AEAEAE',fg='black',activebackground='#AEAEAE',activeforeground='black')
+    
+    b7.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b8.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b9.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    bv.config(bg='#C5C5C5',fg='black',activebackground='#C5C5C5',activeforeground='black')
+    
+    b4.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b5.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b6.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    bm.config(bg='#C5C5C5',fg='black',activebackground='#C5C5C5',activeforeground='black')
+    
+    b1.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b2.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    b3.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    bs.config(bg='#C5C5C5',fg='black',activebackground='#C5C5C5',activeforeground='black')
+    
+    b0.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    bdo.config(bg='white',fg='black',activebackground='white',activeforeground='black')
+    be.config(bg='#D9D9D9',fg='black',activebackground='#D9D9D9',activeforeground='black')
+    ba.config(bg='#C5C5C5',fg='black',activebackground='#C5C5C5',activeforeground='black')
+
+
+    reprebg[0]='#D9D9D9'
+    reprefg[0]='black'
+    closes()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font20=(10/100*height_value)
+fo28=int(22/100*font20)
+fo35=int(28/100*font20)
+fo30=int(24/100*font20)
+fo20=int(16/100*font20)
+fo7=(0.6/100*height_value)
+
+
+
+dmlist=[0]#this control the dark mode 
+fo7list=[fo7]#this control the font of setting options
+
+
+
+
+
+fsh=5/100*height_value
+font5=(5/100*height_value)
+fo10=int(16/100*font5)
+fo15=int(24/100*font5)
+
+
+
+
+
+reprebg=['#D9D9D9']
+reprefg=['black']
+repreh=15/100*height_value
+reprew=width_value/4
+reprehlist=[repreh]
+reprewlist=[reprew]
+
+
+
+
+def reprefdes():
+    try:
+        repref1.destroy()
+    except:
+        pass
+    try:
+        repref2.destroy()                        
+    except:
+        pass
+    try:
+        repref3.destroy()                        
+    except:
+        pass        
+    try:
+        repref4.destroy()                        
+    except:
+        pass        
+    try:
+        repref5.destroy()                        
+    except:
+        pass        
+    try:
+        repref6.destroy()                        
+    except:
+        pass        
+    try:
+        repref7.destroy()                        
+    except:
+        pass        
+    try:
+        repref8.destroy()                        
+    except:
+        pass        
+    try:
+        repref9.destroy()                        
+    except:
+        pass     
+    try:
+        repref0.destroy()                        
+    except:
+        pass             
+    try:
+        reprefd.destroy()                        
+    except:
+        pass        
+    try:
+        reprefdiv.destroy()                        
+    except:
+        pass   
+    try:
+        reprefmu.destroy()                        
+    except:
+        pass  
+    try:
+        reprefsu.destroy()                        
+    except:
+        pass                                                        
+    try:
+        reprefadd.destroy()                        
+    except:
+        pass        
+    try:
+        reprefcl.destroy()                        
+    except:
+        pass        
+    try:
+        reprefbr.destroy()                        
+    except:
+        pass                      
+    try:
+        reprefpower.destroy()                        
+    except:
+        pass                        
+    try:
+        repreflast.destroy()                        
+    except:
+        pass    
+    try:
+        reprefequal.destroy()                        
+    except:
+        pass                                                      
+        
+               
+                              
+                                             
+                                                            
+                                                              
+                             
+####################### 
+
+
+
+
+
+reprelist=[0]# this control the dot
+reprelist1=['sk']# this control function(/,+,etc)
+bracketlist=[0]#this control which bracket to be applied
+pop_uplist=[0]#this control the 
+
+
+
+def insert1():
+    global repref1
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(1)
+   
+    if pop_uplist[0]==0 :
+        repref1=Frame(root,height=repreh,width=reprew)
+        repref1.place(x=0,y=(65/100*heigh_valu))
+        
+        representar=Label(repref1,text='1',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)
+    
+    
+    
+    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*1')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'1')    
+    t1.config(state=DISABLED)    
+    if '(' not in reprelist1:
+        try:
+            t2.config(state=NORMAL)
+            t2.delete(INSERT,END)
+            t2.delete("1.0","end") 
+            t2get=str(eval(t1.get("1.0","end")))
+            t2.insert(INSERT,t2get)
+            t2.config(state=DISABLED)
+        except:
+            pass            
+    else:
+        pass        
+    root.after(170,reprefdes)
+def insert2():
+    global repref2
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(2)
+    
+    if pop_uplist[0]==0 :
+        repref2=Frame(root,height=repreh,width=reprew)
+        repref2.place(x=(widt_valu/4) ,y=(65/100*heigh_valu))
+        
+        representar=Label(repref2,text='2',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*2')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'2')    
+    t1.config(state=DISABLED) 
+    if '(' not in reprelist1:
+        try:            
+            t2.config(state=NORMAL)
+            t2.delete(INSERT,END)
+            t2.delete("1.0","end") 
+            t2get=str(eval(t1.get("1.0",END)))
+            t2.insert(INSERT,t2get)
+            t2.config(state=DISABLED)
+        except:
+            pass            
+    root.after(170,reprefdes)
+    
+    
+def insert3():
+    global repref3
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(3)
+    
+    
+    if pop_uplist[0]==0 :
+        repref3=Frame(root,height=repreh,width=reprew)
+        repref3.place(x=2*(widt_valu/4) ,y=(65/100*heigh_valu))
+        
+        representar=Label(repref3,text='3',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*3')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'3')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+    
+def insert4():
+    global repref4
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(4)
+    
+    
+    if pop_uplist[0]==0 :
+        repref4=Frame(root,height=repreh,width=reprew)
+        repref4.place(x=0 ,y=(55/100*heigh_valu))
+        
+        representar=Label(repref4,text='4',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*4')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'4')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert5():
+    global repref5
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(5)
+    
+    
+    if pop_uplist[0]==0 :
+        repref5=Frame(root,height=repreh,width=reprew)
+        repref5.place(x=(widt_valu/4) ,y=(55/100*heigh_valu))
+        
+        representar=Label(repref5,text='5',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*5')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'5')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert6():
+    global repref6
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(6)
+    
+    
+    if pop_uplist[0]==0 : 
+        repref6=Frame(root,height=repreh,width=reprew)
+        repref6.place(x=2*(widt_valu/4) ,y=(55/100*heigh_valu))
+        
+        representar=Label(repref6,text='6',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*6')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'6')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert7():
+    global repref7
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(7)
+    
+    
+    if pop_uplist[0]==0 : 
+        repref7=Frame(root,height=repreh,width=reprew)
+        repref7.place(x=0 ,y=(45/100*heigh_valu))
+        
+        representar=Label(repref7,text='7',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*7')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'7')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert8():
+    global repref8
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(8)
+    
+    
+    if pop_uplist[0]==0 : 
+        repref8=Frame(root,height=repreh,width=reprew)
+        repref8.place(x=(widt_valu/4) ,y=(45/100*heigh_valu))
+        
+        representar=Label(repref8,text='8',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*8')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'8')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert9():
+    global repref9
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(9)
+    
+    
+    if pop_uplist[0]==0 : 
+        repref9=Frame(root,height=repreh,width=reprew)
+        repref9.place(x=2*(widt_valu/4) ,y=(45/100*heigh_valu))
+        
+        representar=Label(repref9,text='9',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if reprelist1[-2]==')':
+        t1.insert(END,'*9')
+    elif reprelist1[-2]!=')':
+        t1.insert(END,'9')    
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insert0():
+    global repref0
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    reprelist1.append(0)
+    
+    
+    if pop_uplist[0]==0 :
+        repref0=Frame(root,height=repreh,width=reprew)
+        repref0.place(x=0 ,y=(75/100*heigh_valu))
+        
+        representar=Label(repref0,text='0',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    t1.insert(END,0)
+    t1.config(state=DISABLED)
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)
+    except:
+        pass        
+    root.after(170,reprefdes)
+    
+    
+def insertd():
+    global reprefd
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+   
+    
+    
+    if pop_uplist[0]==0 :
+        reprefd=Frame(root,height=repreh,width=reprew)
+        reprefd.place(x=(widt_valu/4) ,y=(75/100*heigh_valu))
+        
+        representar=Label(reprefd,text='.',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)   
+    
+    
+          
+    t1.config(state=NORMAL)
+    
+  
+    if '.' not in reprelist1 or '(' in reprelist1 or reprelist1[-1]==')'  :
+        try:
+            reprelist1.remove('(')
+        except :
+            pass
+        
+        reprelist1.append('.') 
+        index_dot= reprelist1.index('.')
+        
+        
+        
+        if reprelist1[index_dot-1]==1 or  reprelist1[index_dot-1]==2 or reprelist1[index_dot-1]==3 or reprelist1[index_dot-1]==4 or reprelist1[index_dot-1]==5 or reprelist1[index_dot-1]==6 or reprelist1[index_dot-1]==7 or reprelist1[index_dot-1]==8 or reprelist1[index_dot-1]==9 or reprelist1[index_dot-1]==0  :
+            t1.insert(END,'.')
+            
+            
+            
+        elif reprelist1[index_dot-1]!=1 or  reprelist1[index_dot-1]!=2 or reprelist1[index_dot-1]!=3 or reprelist1[index_dot-1]!=4 or reprelist1[index_dot-1]!=5 or reprelist1[index_dot-1]!=6 or reprelist1[index_dot-1]!=7 or reprelist1[index_dot-1]!=8 or reprelist1[index_dot-1]!=9 or reprelist1[index_dot-1]!=0 or reprelist1[index_dot-1]==')' :
+                     
+            
+                     
+            if reprelist1[-2]!=')': 
+                t1.insert(END,'0.')    
+            elif reprelist1[-2]==')': 
+                t1.insert(END,'*0.')           
+                    
+    
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        t2.config(state=DISABLED)    
+    except:
+        pass                
+    
+        
+   # reprelist1.append('.')       
+    t1.config(state=DISABLED)
+    root.after(170,reprefdes)    
+    
+
+def insertdiv():
+    global reprefdiv
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn30=int(24/100*fon20)
+    
+    
+    
+    if pop_uplist[0]==0 :
+        reprefdiv=Frame(root,height=repreh,width=reprew)
+        reprefdiv.place(x=3*(widt_valu/4) ,y=(45/100*heigh_valu))
+        
+        representar=Label(reprefdiv,text='÷',font=("times",fn30,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if 1 in reprelist1 or 2 in reprelist1 or 3 in reprelist1 or 4 in reprelist1 or 5 in reprelist1 or 6 in reprelist1 or 7 in reprelist1 or 8 in reprelist1 or 9 in reprelist1 or 0 in reprelist1 or '.' in reprelist1:
+        t1.insert(END,'/')
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)
+        #bracketlist[0]=''
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('/')
+        
+    elif reprelist1[-1]<=str(0) or reprelist1[-1]>=str(0) :
+        t1.insert("end",'/')  
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)         
+        
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('/')                
+        
+    else :
+        pass        
+    t1.config(state=DISABLED)
+    root.after(170,reprefdes)        
+            
+  
+def insertmu():
+    global reprefmu
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn30=int(24/100*fon20)
+    
+    
+    if pop_uplist[0]==0 :
+        reprefmu=Frame(root,height=repreh,width=reprew)
+        reprefmu.place(x=3*(widt_valu/4) ,y=(55/100*heigh_valu))
+        
+        representar=Label(reprefmu,text='×',font=("times",fn30,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if 1 in reprelist1 or 2 in reprelist1 or 3 in reprelist1 or 4 in reprelist1 or 5 in reprelist1 or 6 in reprelist1 or 7 in reprelist1 or 8 in reprelist1 or 9 in reprelist1 or 0 in reprelist1 or '.' in reprelist1:
+        t1.insert(END,'*')
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)
+            
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('*')
+        
+    elif reprelist1[-1]<=str(0) or reprelist1[-1]>=str(0) :
+        t1.insert("end",'*')  
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)         
+        
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('*')        
+        
+    else :
+        pass        
+    t1.config(state=DISABLED)
+    root.after(170,reprefdes)         
+
+        
+def insertsu():
+    global reprefsu
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    
+    if pop_uplist[0]==0 :
+        reprefsu=Frame(root,height=repreh,width=reprew)
+        reprefsu.place(x=3*(widt_valu/4) ,y=(65/100*heigh_valu))
+        
+        representar=Label(reprefsu,text='━',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if 1 in reprelist1 or 2 in reprelist1 or 3 in reprelist1 or 4 in reprelist1 or 5 in reprelist1 or 6 in reprelist1 or 7 in reprelist1 or 8 in reprelist1 or 9 in reprelist1 or 0 in reprelist1 or '.' in reprelist1:
+        t1.insert(END,'-')
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)
+        
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('-')
+        
+    elif reprelist1[-1]<=str(0) or reprelist1[-1]>=str(0) :
+        t1.insert("end",'-')  
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)         
+        
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('-')
+    else :
+        pass        
+    t1.config(state=DISABLED)
+    root.after(170,reprefdes)   
+    
+
+
+def insertadd():
+    global reprefadd
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=15/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn30=int(24/100*fon20)
+    
+    
+    
+    
+    
+    if pop_uplist[0]==0 :
+        reprefadd=Frame(root,height=repreh,width=reprew)
+        reprefadd.place(x=3*(widt_valu/4) ,y=(75/100*heigh_valu))
+        
+        representar=Label(reprefadd,text='+',font=("times",fn30,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)    
+    t1.config(state=NORMAL)
+    if 1 in reprelist1 or 2 in reprelist1 or 3 in reprelist1 or 4 in reprelist1 or 5 in reprelist1 or 6 in reprelist1 or 7 in reprelist1 or 8 in reprelist1 or 9 in reprelist1 or 0 in reprelist1 or '.' in reprelist1 :
+        t1.insert("end",'+')
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)
+        
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('+')
+        
+    elif reprelist1[-1]<=str(0) or reprelist1[-1]>=str(0) :
+        t1.insert("end",'+')   
+        
+        t2.config(state=NORMAL)
+        t2.delete("1.0","end")
+        t2.config(state=DISABLED)
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append('+')
+    else :
+        pass        
+    t1.config(state=DISABLED)
+    root.after(170,reprefdes)        
+
+
+
+
+def cleart():
+    global reprefcl
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=10/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn30=int(24/100*fon20)
+    
+    reprlength=len(reprelist1)
+    for i in range(0,(reprlength-1)):
+         reprelist1.pop()
+    
+    
+    if pop_uplist[0]==0 :
+        reprefcl=Frame(root,height=repreh,width=reprew)
+        reprefcl.place(x=0 ,y=(40/100*heigh_valu))
+        
+        representar=Label(reprefcl,text='C',font=("times",fn30,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)  
+    t1. config(state=NORMAL)  
+    t2. config(state=NORMAL)  
+    t1.delete("1.0","end")
+    t2.delete("1.0","end")
+    t1. config(state=DISABLED)  
+    t2. config(state=DISABLED)  
+    bracketlist[0]=0 
+    
+    
+    
+    
+    root.after(130,reprefdes)        
+
+
+
+def brackett1():
+    global reprefbr
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=10/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    
+    
+    
+    
+    
+    
+    if pop_uplist[0]==0 :
+        reprefbr=Frame(root,height=repreh,width=reprew)
+        reprefbr.place(x=(widt_valu/4)  ,y=(40/100*heigh_valu))
+        
+        if bracketlist[0]==0:
+            representar=Label(reprefbr,text='(',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)  
+            
+        elif  bracketlist[0] != 0:
+             representar=Label(reprefbr,text=')',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)
+         
+    
+    
+    #if reprelist1[-1]!='.':    
+    t1.config(state=NORMAL)
+    if bracketlist[0]==0 or reprelist1[-1]=='/' or reprelist1[-1]=='*' or reprelist1[-1]=='-' or reprelist1[-1]=='+' :
+                     
+
+            bracketget=bracketlist[0]
+            addbra=bracketget+1
+            bracketlist[0]=addbra
+            
+            
+            if reprelist1[-1] ==1 or  reprelist1[-1] ==2 or  reprelist1[-1] ==3 or  reprelist1[-1] ==4 or  reprelist1[-1] ==5 or  reprelist1[-1] ==6 or  reprelist1[-1] ==7 or  reprelist1[-1] ==8 or  reprelist1[-1] ==9 or  reprelist1[-1] ==0 or  reprelist1[-1] =='.' or reprelist1[-1] ==')' :  
+                reprelist1.append('*(')
+                t1.insert(END,'*(')
+          
+                lencount=len(reprelist1)
+                for i in range(0,lencount-1):
+                    reprelist1.pop()
+            else:                
+                reprelist1.append('(')
+                t1.insert(END,'(')
+           
+    elif bracketlist[0] > 0:
+            
+            if 1 in reprelist1 or 2 in reprelist1 or 3 in reprelist1 or 4 in reprelist1 or 5 in reprelist1 or 6 in reprelist1 or 7 in reprelist1 or 8 in reprelist1 or 9 in reprelist1 or 0 in reprelist1 or '.' in reprelist1 :
+                bracketget=bracketlist[0]#this is 
+                addbra=bracketget-1#inside 
+                bracketlist[0]=addbra#because of it not it will not subtract the number which control the type of bracket until this if function is not true 
+                try:
+                    reprelist1.remove('(')
+                except:
+                    pass
+                t1.insert(END,')')
+
+                    
+                t2.config(state=NORMAL)   
+                reprelist1.append(')')
+                try:     
+                    t2.delete("1.0","end") 
+                    t2get=str(eval(t1.get("1.0",END)))
+                    t2.insert(INSERT,t2get)
+                except:
+                    t2.insert('end','undefined')    
+                t2.config(state=DISABLED)       
+    t1.config(state=DISABLED)
+    
+    
+    
+    
+    
+    
+        
+    root.after(130,reprefdes)        
+
+
+
+
+def power_bu():
+    global reprefpower
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=10/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+    
+    
+    
+    
+    
+    if pop_uplist[0]==0 :
+        reprefpower=Frame(root,height=repreh,width=reprew)
+        reprefpower.place(x=2*(widt_valu/4)  ,y=(40/100*heigh_valu))
+        
+        representar=Label(reprefpower,text='x^(',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)  
+
+    if reprelist1[-1] ==1 or  reprelist1[-1] ==2 or  reprelist1[-1] ==3 or  reprelist1[-1] ==4 or  reprelist1[-1] ==5 or  reprelist1[-1] ==6 or  reprelist1[-1] ==7 or  reprelist1[-1] ==8 or  reprelist1[-1] ==9 or  reprelist1[-1] ==0 or  reprelist1[-1] =='.' or  reprelist1[-1] ==')'  :   
+        
+        t1.config(state=NORMAL) 
+        t1.insert("end","**(")                     
+        t1.config(state=DISABLED)    
+        bracketget=bracketlist[0]
+        addbra=bracketget+1
+        bracketlist[0]=addbra
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+    
+    root.after(130,reprefdes)
+
+
+
+def del_last():
+    global repreflast
+    widt_valu=root.winfo_screenwidth()
+    heigh_valu=root.winfo_screenheight()
+    repreh=10/100*heigh_valu
+    reprew=widt_valu/4
+    fon20=(10/100*heigh_valu)
+    fn20=int(16/100*fon20)
+        
+    
+    
+    if pop_uplist[0]==0 :
+        repreflast=Frame(root,height=repreh,width=reprew)
+        repreflast.place(x=3*(widt_valu/4)  ,y=(40/100*heigh_valu))
+        
+        representar=Label(repreflast,text='⌫',font=("times",fn20,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)  
+            
+
+    t1. config(state=NORMAL)  
+    
+   
+    
+    
+    
+    last_ele_list=['op']
+    
+    last_ele_list[0]=t1.get("end-2c","end-1c")
+   
+
+    t1.delete("end-2c","end")  
+    
+    
+    
+    
+    
+    
+    try:  
+        reprelist1.pop()  
+    except:
+        pass 
+        
+        
+    if  last_ele_list[0]=='(':
+            
+            bracketget=bracketlist[0]
+            addbra=bracketget-1
+            bracketlist[0]=addbra  
+            
+            
+    if  last_ele_list[0]==')':
+            
+            bracketget=bracketlist[0]
+            addbra=bracketget+1
+            bracketlist[0]=addbra              
+                
+    
+    
+    
+    
+    
+    t1. config(state=DISABLED)  
+    
+    if 'sk' not in reprelist1:
+        reprelist1.append('sk')
+        
+        
+        
+        
+    
+    
+    
+    try:
+        t2.config(state=NORMAL)
+        t2.delete(INSERT,END)
+        t2.delete("1.0","end") 
+        t2get=str(eval(t1.get("1.0",END)))
+        t2.insert(INSERT,t2get)
+        
+    except:
+        pass
+    t2.config(state=DISABLED)
+    
+    
+    root.after(130,reprefdes)
+
+
+
+
+
+
+def equal_press():
+        global reprefequal
+        widt_valu=root.winfo_screenwidth()
+        heigh_valu=root.winfo_screenheight()
+        repreh=15/100*heigh_valu
+        reprew=widt_valu/4
+        fon20=(10/100*heigh_valu)
+        fn28=int(22/100*fon20)
+        
+        
+            
+        
+        
+        if pop_uplist[0]==0 :
+            reprefequal=Frame(root,height=repreh,width=reprew)
+            reprefequal.place(x=2*(widt_valu/4)  ,y=(75/100*heigh_valu))
+            
+            representar=Label(reprefequal,text='=',font=("times",fn28,"bold"),bg=reprebg[0],fg=reprefg[0]).place(x=0,y=0,relwidth=1,relheight=1)
+        
+        t1.config(state=NORMAL)
+        t2.config(state=NORMAL)
+        
+        
+        
+        last_ele_list=['op']
+         
+        last_ele_list[0]=t1.get("end-2c","end-1c")
+   
+        
+        
+        if  last_ele_list[0]=='(':
+            
+            bracketget=bracketlist[0]
+            addbra=bracketget-1
+            bracketlist[0]=addbra  
+            
+            
+        if  last_ele_list[0]==')':
+            
+            bracketget=bracketlist[0]
+            addbra=bracketget+1
+            bracketlist[0]=addbra     
+        
+        
+        
+        
+        t2_content=t2.get("1.0","end-1c")
+        t1.delete("1.0","end")
+        t2.delete("1.0","end")
+        t1.insert("1.0",t2_content)
+        
+         
+        lencount=len(reprelist1)
+        for i in range(0,lencount-1):
+            reprelist1.pop()
+        reprelist1.append(t2_content) 
+          
+            
+        
+        
+        
+        t1.config(state=DISABLED)
+        t2.config(state=DISABLED)
+        
+         
+           
+            
+                
+        root.after(170,reprefdes)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fs=Frame(root,bg='white',height=fsh)
+fs.pack(fill='x')
+
+    
+
+
+
+fc=Frame(fs,bg='red',height=fsh,width=fsh)
+fc.pack(anchor=NE)
+bcu=Button(fc,text='✘',font=("times",fo15,"bold") ,fg='red',bg='white',borderwidth=0,bd=0,highlightthickness=0,activebackground='white',activeforeground='red',command=root.quit)
+bcu.place(x=0,y=0,relheight=1,relwidth=1)
+
+
+
+
+a=30/100*height_value
+b=15/100*height_value
+spacing=int(4/100*a)
+t1fo=int(4/100*a)
+f1=Frame(root,bg='red',height=a)
+f1.pack(fill='x')
+t1=Text(f1,font=("times",t1fo,"bold"),spacing2=spacing,state=DISABLED)
+t1.place(x=0,y=0,relwidth=1,relheight=1)
+f2=Frame(root,bg='blue',height=b)
+f2.pack(fill='x')
+t2=Text(f2,font=("times",t1fo,"bold"),spacing2=spacing,state=DISABLED)
+t2.place(x=0,y=0,relwidth=1,relheight=1)
+
+
+
+c=10/100*height_value
+f3=Frame(root,bg='blue',height=c)
+f3.pack(fill='x')
+f4=Frame(root,bg='blue',height=c)
+f4.pack(fill='x')
+f5=Frame(root,bg='blue',height=c)
+f5.pack(fill='x')
+f6=Frame(root,bg='blue',height=c)
+f6.pack(fill='x')
+f7=Frame(root,bg='blue',height=c)
+f7.pack(fill='x')
+
+
+
+x1=width_value/4
+bd=Button(f3,text='⌫',bg='#AEAEAE',font=("times", fo20 ,"bold"),relief=FLAT,activebackground='#AEAEAE',borderwidth=0,bd=0,highlightthickness=0,command=del_last)
+bd.place(y=0,x=(x1*3),relheight=1,relwidth=(1/4))
+bp=Button(f3,text='x^(',bg='#AEAEAE',font=("times", fo20 ,"bold"),relief=FLAT,activebackground='#AEAEAE',borderwidth=0,bd=0,highlightthickness=0,command=power_bu)
+bp.place(y=0,x=(x1*2),relheight=1,relwidth=(1/4))
+bb=Button(f3,text='( )',bg='#AEAEAE',font=("times", fo20 ,"bold"),relief=FLAT,activebackground='#AEAEAE',borderwidth=0,bd=0,highlightthickness=0,command=brackett1)
+bb.place(y=0,x=x1,relheight=1,relwidth=(1/4))
+bc=Button(f3,text='C',bg='#AEAEAE',font=("times", fo20 ,"bold"),relief=FLAT,activebackground='#AEAEAE',borderwidth=0,bd=0,highlightthickness=0,command=cleart)
+bc.place(y=0,x=0,relheight=1,relwidth=(1/4))
+
+
+
+y=(50/100*height_value)/5
+b7=Button(f4,text='7',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert7)
+b7.place(y=0,x=0,relheight=1,relwidth=(1/4))
+b8=Button(f4,text='8',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert8)
+b8.place(y=0,x=x1,relheight=1,relwidth=(1/4))
+b9=Button(f4,text='9',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert9)
+b9.place(y=0,x=(x1*2),relheight=1,relwidth=(1/4))
+bv=Button(f4,text='÷',font=("times", fo30 ,"bold"),bg='#C5C5C5',activebackground='#C5C5C5',relief=FLAT,command=insertdiv)
+bv.place(y=0,x=(x1*3),relheight=1,relwidth=(1/4)) 
+
+
+
+
+
+
+b4=Button(f5,text='4',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert4)
+b4.place(y=0,x=0,relheight=1,relwidth=(1/4))
+b5=Button(f5,text='5',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert5)
+b5.place(y=0,x=x1,relheight=1,relwidth=(1/4))
+b6=Button(f5,text='6',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert6)
+b6.place(y=0,x=(x1*2),relheight=1,relwidth=(1/4))
+bm=Button(f5,text='×',font=("times", fo30 ,"bold"),bg='#C5C5C5',activebackground='#C5C5C5',relief=FLAT,command=insertmu)
+bm.place(y=0,x=(x1*3),relheight=1,relwidth=(1/4)) 
+
+
+
+
+
+b1=Button(f6,text='1',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert1)
+b1.place(y=0,x=0,relheight=1,relwidth=(1/4))
+b2=Button(f6,text='2',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert2)
+b2.place(y=0,x=x1,relheight=1,relwidth=(1/4))
+b3=Button(f6,text='3',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert3)
+b3.place(y=0,x=(x1*2),relheight=1,relwidth=(1/4))
+bs=Button(f6,text='━',font=("times", fo20 ,"bold"),bg='#C5C5C5',activebackground='#C5C5C5',relief=FLAT,command=insertsu)
+bs.place(y=0,x=(x1*3),relheight=1,relwidth=(1/4)) 
+
+
+
+
+
+b0=Button(f7,text='0',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insert0)
+b0.place(y=0,x=0,relheight=1,relwidth=(1/4))
+bdo=Button(f7,text='.',font=("times", fo20 ,"bold"),bg='white',activebackground='white',relief=FLAT,command=insertd)
+bdo.place(y=0,x=x1,relheight=1,relwidth=(1/4))
+be=Button(f7,text='=',font=("times", fo28 ,"bold"),bg='#D9D9D9',activebackground='#D9D9D9',relief=FLAT,command=equal_press)
+be.place(y=0,x=(x1*2),relheight=1,relwidth=(1/4))
+ba=Button(f7,text='+',font=("times", fo35 ,"bold") ,bg='#C5C5C5',activebackground='#C5C5C5',relief=FLAT,command=insertadd)
+ba.place(y=0,x=(x1*3),relheight=1,relwidth=(1/4)) 
+
+
+
+
+
+
+def enable_tap():
+    pop_uplist[0]=0
+    tapshotext[0]='Disable \ntap shower'
+    bh.config(text='Disable \ntap shower')
+    tapshocom[0]=disable_tap
+    closes()
+
+
+
+
+def disable_tap():
+    pop_uplist[0]=1
+    tapshotext[0]='Enable \ntap shower'
+    bh.config(text='Enable \ntap shower')
+    tapshocom[0]=enable_tap
+    closes()
+    
+
+
+
+
+
+
+
+
+
+
+tapshotext=['Disable \ntap shower'] 
+tapshocom=[disable_tap]
+
+
+
+
+def closes():
+    bst.config(text='Setting ▼',command=opens)
+    stf.destroy()
+    
+
+
+##stfh=pass
+
+def opens():
+    global stf
+    global bh
+    global bdm
+    global bcl
+    global line
+    heigh_valu=root.winfo_screenheight()
+    bst.config(text='Setting ▲',command=closes)
+    stf=Frame(root,bg='black' )
+    stf.place(x=0,y=(5/100*heigh_valu)+2)# this is taking the current position of the frame because if i open it after screen size or orientation changes is it will still took the last height value it had read and can't even use (height_valu) which is continiously checking because it hasn't reached their  
+    
+    if dmlist[0]==0:
+        bh=Button(stf,text=tapshotext[0] ,font=("times",int(fo7list[0]),"bold") ,borderwidth=0,bd=0,highlightthickness=0,anchor=W,justify=LEFT,command=tapshocom[0])
+        bh.pack(fill='x')
+        bdm=Button(stf,text='Enable \ndark mode',font=("times",int(fo7list[0]),"bold"),borderwidth=0,bd=0,highlightthickness=0,anchor=W,justify=LEFT,command=enabledm)
+        bdm.pack(fill='x')
+        line=Label(stf,font='times 0 bold',pady=0,bg='black')
+        line.pack(fill='x')
+        bcl=Button(stf,text='Close',font=("times",int(fo7list[0]),"bold"),borderwidth=2,bd=0,highlightthickness=0,anchor=W,command=closes)
+        bcl.pack(fill='x')
+        
+        
+    elif dmlist[0]==1:
+        bh=Button(stf,text=tapshotext[0] ,font=("times",int(fo7list[0]),"bold"),borderwidth=0,bd=0,highlightthickness=0,anchor=W,bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white',justify=LEFT,command=tapshocom[0])
+        bh.pack(fill='x')
+        bdm=Button(stf,text='Disable \ndark mode',font=("times",int(fo7list[0]),"bold"),borderwidth=0,bd=0,highlightthickness=0,anchor=W,justify=LEFT,command=disabledm,bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white')
+        bdm.pack(fill='x')
+        line=Label(stf,font='times 0 bold',pady=0,bg='white')
+        line.pack(fill='x')
+        bcl=Button(stf,text='Close',font=("times",int(fo7list[0]),"bold"),borderwidth=2,bd=0,highlightthickness=0,anchor=W,command=closes,bg='#3D3C3C',fg='white',activebackground='#3D3C3C',activeforeground='white')
+        bcl.pack(fill='x')        
+
+
+
+
+bst=Button(fs,text='Setting ▼',activebackground='white',font=("times",fo10,"bold"),bg='white',borderwidth=0,bd=0,highlightthickness=0,command=opens)
+bst.place(x=0,y=0)
+
+
+
+
+
+
+
+
+
+
+hlist=[0]
+wlist=[0]
+
+def check_again():
+    global height_valu
+    global width_valu
+    width_valu=root.winfo_screenwidth()
+    height_valu=root.winfo_screenheight()
+    if wlist[0]!=0 and hlist[0]!=0:
+        if wlist[0]!=width_valu and hlist[0]!=height_valu:
+            root.geometry("%dx%d+0+0" % (width_valu,height_valu) ) 
+            resize()
+    
+    hlist[0]=height_valu
+    wlist[0]=width_valu
+    
+    rep()
+
+
+
+def rep():
+    my_label=Label(root)
+    my_label.after(170,check_again)
+    
+rep()    
+
+
+
+
+
+root.mainloop()
